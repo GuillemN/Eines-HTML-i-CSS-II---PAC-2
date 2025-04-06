@@ -1,0 +1,82 @@
+/* _pages.scss - Portada (index.html) amb CSS Grid i fallback */
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+  
+  
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+  }
+  
+  .poster {
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+  
+    @supports (display: grid) {
+      .poster__grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        max-width: 1000px;
+      }
+  
+      .poster__image {
+        grid-column: 4 / 10;
+        grid-row: 2 / 3;
+      }
+  
+      .poster__title {
+        grid-column: 3 / 11;
+        grid-row: 3 / 4;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+  
+      .poster__subtitle {
+        grid-column: 4 / 10;
+        grid-row: 4 / 5;
+        text-align: center;
+        font-size: 1rem;
+        color: #64b5f6;
+      }
+    }
+  
+    @supports not (display: grid) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .poster__image,
+      .poster__title,
+      .poster__subtitle {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  
+  .poster__image img {
+    width: 1000px;
+    height: auto;
+  }
+  

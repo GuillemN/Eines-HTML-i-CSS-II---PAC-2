@@ -1,0 +1,78 @@
+
+  /*participants*/
+  .header {
+    background-color: #ffffff;
+    text-align: center;
+
+    font-size: 0.9rem;
+    color: #333;
+  
+  
+}
+  .speakers {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+  
+    &__title {
+      font-size: 2.5rem;
+      color: #1565c0;
+      margin-bottom: 2rem;
+    }
+  
+    &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+  
+  .speakers__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .speaker {
+    background-color: #e3f2fd;
+    padding: 1rem;
+    border-radius: 6px;
+    flex: 0 1 calc(33.333% - 2rem); // 🔹 Exactament 3 per línia
+    max-width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+  
+    img {
+      width: 260px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    h2 {
+      color: #1565c0;
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      color: #64b5f6;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .speaker {
+      flex: 0 1 calc(50% - 2rem); // 🔹 2 per fila en tablet
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .speaker {
+      flex: 0 1 100%; // 🔹 1 per fila en mòbil
+    }
+  }
+  

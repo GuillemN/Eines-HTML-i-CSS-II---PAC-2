@@ -1,31 +1,45 @@
 /**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
+ * Declare CSS Layers
  */
+ @layer base, bootstrap, components, pages;
 
-/**
- * Import variables
- */
-
-@import "variables";
-@import "bootstrap/scss/bootstrap";
-
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
-
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "layouts/home";
-
-/**
- * Do NOT include anything else in this file!
- */
+ /**
+  * Base styles and variables
+  */
+ @layer base {
+   @import "variables";
+ }
+ 
+ /**
+  * Bootstrap framework
+  */
+ @layer bootstrap {
+   @import "bootstrap/scss/bootstrap";
+ }
+ 
+ /**
+  * Component styles per pàgina
+  */
+ @layer components {
+   @import "layouts/home";
+   @import "layouts/participants";
+ }
+ 
+ /**
+  * Aplicació de capes de cascada a dues pàgines (REQUISIT PAC)
+  */
+ @layer article {
+   @import "layouts/article";
+ }
+ 
+ @layer contact {
+   @import "layouts/contact";
+ }
+ 
+ /**
+  * Estils específics de pàgines
+  */
+ @layer pages {
+   @import "pages";
+ }
+ 
