@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ca">
   <head>
@@ -7,19 +6,18 @@
     <title>Jornades Economia Circular</title>
     <link rel="stylesheet" href="./assets/styles/main.scss" />
     <script type="module" src="./assets/scripts/main.js"></script>
-
   </head>
   <body>
     <header class="header">
-      <div class="logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="assets/images/logo-centre2.png" alt="Logo Jornades" />
         </a>
-      </div>      
-      <nav class="nav">
-        <a href="participants.html">ponents</a>
-        <a href="article.html">blog</a>
-        <a href="Contacta.html">Contacta'ns</a>
+      </div>
+      <nav class="header__nav nav">
+        <a class="nav__link" href="participants.html">ponents</a>
+        <a class="nav__link" href="article.html">blog</a>
+        <a class="nav__link" href="Contacta.html">Contacta'ns</a>
       </nav>
     </header>
 
@@ -32,32 +30,30 @@
         <div class="poster__image">
           <img src="assets/images/portada.jpg" alt="Economia circular" />
         </div>
-
       </div>
     </main>
 
     <footer class="footer">
-      <p>Vols participar o col·laborar? Contacta amb nosaltres!</p>
-      <hr />
+      <p class="footer__text">Vols participar o col·laborar? Contacta amb nosaltres!</p>
+      <hr class="footer__separator" />
       <div class="footer__bottom">
         <div class="footer__logo">
           <img src="assets/images/logo-centre2.png" alt="Logo Jornades" />
         </div>
-    
+
         <div class="footer__nav">
-          <a href="index.html">Inici</a>
-          <a href="participants.html">Participants</a>
-          <a href="article.html">Programa</a>
-          <a href="Contacta.html">Altres</a>
+          <a class="footer__link" href="index.html">Inici</a>
+          <a class="footer__link" href="participants.html">Participants</a>
+          <a class="footer__link" href="article.html">Programa</a>
+          <a class="footer__link" href="Contacta.html">Altres</a>
         </div>
-    
+
         <div class="footer__icons">
-          <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a class="footer__icon" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a class="footer__icon" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a class="footer__icon" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         </div>
       </div>
     </footer>
-    
   </body>
 </html>

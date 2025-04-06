@@ -8,3 +8,23 @@ $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 $mqMinWidth: 420px;
+
+// Botons
+$btn-border-radius: 2rem;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2rem;
+$btn-font-weight: 600;
+
+// Alerts
+$alert-border-radius: 0;
+$alert-padding-y: 1.25rem;
+$alert-padding-x: 2rem;
+
+// Cards
+$card-border-radius: 0.5rem;
+$card-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+// Formularis
+$input-border-radius: 0.3rem;
+$input-bg: #f5f5f5;
+$input-color: #1565c0;

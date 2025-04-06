@@ -1,18 +1,7 @@
-
-  /*participants*/
-  .header {
-    background-color: #ffffff;
-    text-align: center;
-
-    font-size: 0.9rem;
-    color: #333;
-  
-  
-}
-  .speakers {
+.speakers {
     padding: 3rem 1rem;
-    text-align: center;
     background-color: #ffffff;
+    text-align: center;
   
     &__title {
       font-size: 2.5rem;
@@ -25,54 +14,47 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-  }
   
-  .speakers__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+    &__card {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-radius: 6px;
+      flex: 0 1 calc(33.333% - 2rem);
+      max-width: 300px;
+      box-sizing: border-box;
+      text-align: center;
+    }
   
-  .speaker {
-    background-color: #e3f2fd;
-    padding: 1rem;
-    border-radius: 6px;
-    flex: 0 1 calc(33.333% - 2rem); // 🔹 Exactament 3 per línia
-    max-width: 300px;
-    box-sizing: border-box;
-    text-align: center;
-  
-    img {
+    &__image {
       width: 260px;
       height: auto;
       margin-bottom: 1rem;
     }
   
-    h2 {
+    &__name {
       color: #1565c0;
       font-size: 1.2rem;
       margin: 0.5rem 0;
     }
   
-    p {
+    &__description {
       font-size: 0.9rem;
       color: #64b5f6;
     }
   }
   
   @media (max-width: 768px) {
-    .speaker {
-      flex: 0 1 calc(50% - 2rem); // 🔹 2 per fila en tablet
+    .speakers__card {
+      flex: 0 1 calc(50% - 2rem);
     }
   }
   
   @media (max-width: 480px) {
-    .speaker {
-      flex: 0 1 100%; // 🔹 1 per fila en mòbil
+    .speakers__card {
+      flex: 0 1 100%;
     }
   }
   

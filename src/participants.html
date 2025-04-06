@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ca">
   <head>
@@ -7,94 +6,83 @@
     <title>Jornades Economia Circular</title>
     <link rel="stylesheet" href="./assets/styles/main.scss" />
     <script type="module" src="./assets/scripts/main.js"></script>
-
   </head>
   <body>
     <header class="header">
-      <div class="logo">
+      <div class="header__logo">
         <a href="index.html">
-        <img src="assets/images/logo-centre2.png" alt="Logo Jornades" />
-      </a>
-      </div>      
-      <nav class="nav">
-        <a href="participants.html">ponents</a>
-        <a href="article.html">blog</a>
-        <a href="Contacta.html">Contacta'ns</a>
+          <img src="assets/images/logo-centre2.png" alt="Logo Jornades" />
+        </a>
+      </div>
+      <nav class="header__nav nav">
+        <a class="nav__link" href="participants.html">ponents</a>
+        <a class="nav__link" href="article.html">blog</a>
+        <a class="nav__link" href="Contacta.html">Contacta'ns</a>
       </nav>
-      
     </header>
+
     <hr />
+
     <main class="speakers">
       <h1 class="speakers__title">Ponents</h1>
       <div class="speakers__grid">
-        <div class="speaker">
-          <img src="assets/images/perfil1.jpg" alt="Speaker 1" />
-          <h2>Ponent 1</h2>
-          <p>
-            Activista climàtic i divulgador sobre consum responsable.
-          </p>
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil1.jpg" alt="Speaker 1" />
+          <h2 class="speakers__name">Ponent 1</h2>
+          <p class="speakers__description">Activista climàtic i divulgador sobre consum responsable.</p>
         </div>
 
-        <div class="speaker">
-          <img src="assets/images/perfil2.jpg" alt="Speaker 2" />
-          <h2>Ponent 2</h2>
-          <p>
-            Expert en gestió de residus i sostenibilitat urbana.
-          </p>
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil2.jpg" alt="Speaker 2" />
+          <h2 class="speakers__name">Ponent 2</h2>
+          <p class="speakers__description">Expert en gestió de residus i sostenibilitat urbana.</p>
         </div>
-        <div class="speaker">
-          <img src="assets/images/perfil3.jpg" alt="Speaker 3" />
-          <h2>Ponent 3</h2>
-          <p>
-            Investigador en economia circular i energies renovables.
-          </p>
+
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil3.jpg" alt="Speaker 3" />
+          <h2 class="speakers__name">Ponent 3</h2>
+          <p class="speakers__description">Investigador en economia circular i energies renovables.</p>
         </div>
-        <div class="speaker">
-          <img src="assets/images/perfil4.jpg" alt="Speaker 4" />
-          <h2>Ponent 4</h2>
-          <p>
-            Fundador d’un projecte local de reutilització de materials.
-          </p>
+
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil4.jpg" alt="Speaker 4" />
+          <h2 class="speakers__name">Ponent 4</h2>
+          <p class="speakers__description">Fundador d’un projecte local de reutilització de materials.</p>
         </div>
-        <div class="speaker">
-          <img src="assets/images/perfil5.jpg" alt="Speaker 5" />
-          <h2>Ponent 5</h2>
-          <p>
-            Coordinadora d’iniciatives verdes per a joves.
-          </p>
+
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil5.jpg" alt="Speaker 5" />
+          <h2 class="speakers__name">Ponent 5</h2>
+          <p class="speakers__description">Coordinadora d’iniciatives verdes per a joves.</p>
         </div>
-        <div class="speaker">
-          <img src="assets/images/perfil6.jpg" alt="Speaker 6" />
-          <h2>Ponent 6</h2>
-          <p>
-            Consultor ambiental amb experiència internacional.
-          </p>
+
+        <div class="speakers__card">
+          <img class="speakers__image" src="assets/images/perfil6.jpg" alt="Speaker 6" />
+          <h2 class="speakers__name">Ponent 6</h2>
+          <p class="speakers__description">Consultor ambiental amb experiència internacional.</p>
         </div>
-        
+      </div>
     </main>
 
     <footer class="footer">
-      <p>Vols participar o col·laborar? Contacta amb nosaltres!</p>
-      <hr />
+      <p class="footer__text">Vols participar o col·laborar? Contacta amb nosaltres!</p>
+      <hr class="footer__separator" />
       <div class="footer__bottom">
         <div class="footer__logo">
           <img src="assets/images/logo-centre2.png" alt="Logo Jornades" />
         </div>
-    
         <div class="footer__nav">
           <a href="index.html">Inici</a>
           <a href="participants.html">Participants</a>
           <a href="article.html">Programa</a>
           <a href="Contacta.html">Altres</a>
         </div>
-    
         <div class="footer__icons">
-          <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </footer>
-    
   </body>
 </html>

@@ -1,33 +1,22 @@
-/**
- * Declare CSS Layers
- */
+
  @layer base, bootstrap, components, pages;
 
- /**
-  * Base styles and variables
-  */
+ 
  @layer base {
    @import "variables";
  }
  
- /**
-  * Bootstrap framework
-  */
+
  @layer bootstrap {
    @import "bootstrap/scss/bootstrap";
  }
- 
- /**
-  * Component styles per pàgina
-  */
+
  @layer components {
    @import "layouts/home";
    @import "layouts/participants";
  }
  
- /**
-  * Aplicació de capes de cascada a dues pàgines (REQUISIT PAC)
-  */
+
  @layer article {
    @import "layouts/article";
  }
@@ -36,9 +25,7 @@
    @import "layouts/contact";
  }
  
- /**
-  * Estils específics de pàgines
-  */
+
  @layer pages {
    @import "pages";
  }

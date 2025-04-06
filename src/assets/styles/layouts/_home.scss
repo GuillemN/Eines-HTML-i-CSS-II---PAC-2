@@ -2,39 +2,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 4rem ;
-  padding-right: 4rem ;
-  padding-top: 1rem ;
-  padding-bottom: 1rem ;
-    .logo img {
+  padding: 1rem 4rem;
 
-      max-width: 30%;
-      height: auto;     // 👈 Manté la proporció original
-      display: block;   // 👈 Evita espais no desitjats
-    }
+  &__logo img {
+    max-width: 30%;
+    height: auto;
+    display: block;
   }
 
+  &__nav {
+    display: flex;
+    gap: 2rem;
 
+    a {
+      text-decoration: none;
+      color: #1565c0;
+      font-weight: bold;
+    }
+  }
+}
 
 .footer {
   background-color: #ffffff;
   text-align: center;
-
   font-size: 0.9rem;
   color: #333;
-  padding-left: 4rem ;
-  padding-right: 4rem ;
-  padding-top: 1rem ;
-  padding-bottom: 1rem ;
+  padding: 1rem 4rem;
 
-  hr {
+  &__separator {
     width: 60%;
     margin: 2rem auto;
     border: none;
     border-top: 4px solid #bbdefb;
   }
 
-  .footer__bottom {
+  &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,38 +45,36 @@
     flex-wrap: wrap;
   }
 
-  .footer__logo img {
+  &__logo img {
     max-height: 50px;
   }
 
-  .footer__nav {
+  &__nav {
     display: flex;
     gap: 4rem;
     justify-content: center;
     flex: 1;
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 
-  .footer__nav a {
-    color: #1565c0;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .footer__icons {
+  &__icons {
     display: flex;
     gap: 1rem;
     font-size: 1.5rem;
-  }
 
-  .footer__icons a {
-    color: #1565c0;
-    text-decoration: none;
-    transition: color 0.3s;
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      transition: color 0.3s;
 
-    &:hover {
-      color: #64b5f6;
+      &:hover {
+        color: #64b5f6;
+      }
     }
   }
 }
-
-

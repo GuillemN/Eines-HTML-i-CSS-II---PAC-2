@@ -7,32 +7,35 @@
     &__header {
       text-align: center;
       margin-bottom: 2rem;
+    }
   
-      h1 {
-        font-size: 2.5rem;
-        color: #1565c0;
-      }
+    &__title {
+      font-size: 2.5rem;
+      color: #1565c0;
+    }
   
-      .author {
-        font-size: 0.9rem;
-        color: #64b5f6;
-        font-weight: bold;
-      }
+    &__author {
+      font-size: 0.9rem;
+      color: #64b5f6;
+      font-weight: bold;
     }
   
     &__content {
-      p {
+      display: flex;
+      flex-direction: column;
+  
+      & > .article__paragraph {
         margin: 1rem 0;
       }
   
-      img {
+      & > .article__image {
         width: 100%;
         height: auto;
         margin: 1.5rem 0;
         border-radius: 0.5rem;
       }
   
-      blockquote {
+      & > .article__blockquote {
         margin: 1.5rem 0;
         padding: 1rem 1.5rem;
         background-color: #e3f2fd;
@@ -40,22 +43,26 @@
         font-style: italic;
       }
   
-      ul {
+      & > .article__list {
         list-style: circle;
         margin: 1rem 0;
         padding-left: 2rem;
         color: #1565c0;
+  
+        &-item {
+          margin-bottom: 0.5rem;
+        }
       }
     }
-  }
   
-  // Pseudoclasses funcionals
-  .article__content:has(blockquote) {
-    border-top: 2px dashed #bbdefb;
-    padding-top: 2rem;
-  }
+    // Pseudoclasses funcionals
+    &__content:has(.article__blockquote) {
+      border-top: 2px dashed #bbdefb;
+      padding-top: 2rem;
+    }
   
-  .article__content :is(ul, blockquote) {
-    font-size: 1rem;
+    &__content :is(.article__list, .article__blockquote) {
+      font-size: 1rem;
+    }
   }
   
