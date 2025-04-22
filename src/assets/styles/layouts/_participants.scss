@@ -44,16 +44,11 @@
       font-size: 0.9rem;
       color: #64b5f6;
     }
-  }
-  
-  @media (max-width: 768px) {
-    .speakers__card {
+    @container (max-width: 700px) {
       flex: 0 1 calc(50% - 2rem);
     }
-  }
-  
-  @media (max-width: 480px) {
-    .speakers__card {
+
+    @container (max-width: 400px) {
       flex: 0 1 100%;
     }
   }

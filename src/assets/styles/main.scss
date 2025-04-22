@@ -28,5 +28,8 @@
 
  @layer pages {
    @import "pages";
+   body.contact-page .contact__form {
+    padding: 4rem; 
+  }
  }
  
